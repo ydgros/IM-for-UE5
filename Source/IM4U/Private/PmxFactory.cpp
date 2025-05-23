@@ -762,7 +762,7 @@ USkeletalMesh* UPmxFactory::ImportSkeletalMesh(
 #if UE_VERSION_OLDER_THAN(5,4,0)
 		SkeletalMesh->SaveLODImportedData(0, *SkelMeshImportDataPtr);
 #else
-		SkeletalMesh->CommitMeshDescription(0);
+		//SkeletalMesh->CommitMeshDescription(0);
 #endif
 
 		{

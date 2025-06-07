@@ -12,7 +12,12 @@ class FIM4U : public IIM4U
 
 IMPLEMENT_MODULE( FIM4U, IM4U )
 
+#include "Factories/FbxAssetImportData.h"
 
+void UFbxAssetImportData::PostEditChangeProperty(FPropertyChangedEvent& PropertyChangedEvent)
+{
+	Super::PostEditChangeProperty(PropertyChangedEvent);
+}
 
 void FIM4U::StartupModule()
 {
